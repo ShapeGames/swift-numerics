@@ -21,6 +21,8 @@ let package = Package(
     .library(name: "ComplexModule", targets: ["ComplexModule"]),
     .library(name: "Numerics", targets: ["Numerics"]),
     .library(name: "RealModule", targets: ["RealModule"]),
+    .library(name: "IntegerUtilities", targets: ["IntegerUtilities"]),
+    .library(name: "_NumericsShims", targets: ["_NumericsShims"])
   ],
   
   targets: [
