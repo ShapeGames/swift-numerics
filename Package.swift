@@ -45,13 +45,13 @@ let package = Package(
     
     .target(
       name: "RealModule",
-      dependencies: ["_NumericsShims"],
+      dependencies: ["NumericsShims"],
       exclude: excludedFilenames
     ),
     
     // MARK: - Implementation details
     .target(
-      name: "_NumericsShims",
+      name: "NumericsShims",
       exclude: excludedFilenames,
       linkerSettings: [.linkedLibrary("m", .when(platforms: [.linux, .android]))]
     ),
